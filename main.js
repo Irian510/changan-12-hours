@@ -292,6 +292,7 @@ document.getElementById("wl-send").addEventListener("click", () => {
   frame.appendChild(v);
   frame.appendChild(badge);
   frame.appendChild(errBox);
+  v.load(); // 动态插入 source 后需显式触发加载
 
   let failedSources = 0;
   const sources = Array.from(v.querySelectorAll("source"));
