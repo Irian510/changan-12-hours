@@ -280,7 +280,7 @@ document.getElementById("wl-send").addEventListener("click", () => {
     s.type = "video/mp4";
     v.appendChild(s);
   } else {
-    v.poster = "images/s001.png";
+    v.poster = "images/s001.jpg";
     [["video/final.mp4", 'video/mp4; codecs="avc1.640028, mp4a.40.2"'],
      ["video/final.webm", 'video/webm; codecs="vp9, opus"']].forEach(([src, type]) => {
       const s = document.createElement("source");
